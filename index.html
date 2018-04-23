@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Film form search</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="data.js"></script>
+	<script defer src="main.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<form action="" id="movieForm" name="movieForm" class="movie-form">
+		<div class="form-group">
+			<label for="genreSelect" class="form-label">Genre</label>
+			<select name="genre" id="genreSelect" class="genre-select">
+				<option value="">None</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="fromInput" class="form-label">Year range</label>
+			<input type="number" id="fromInput" class="form-input" name="from" min="1930" max="2015" placeholder="from">
+			<span> - </span>
+			<input type="number" id="toInput" class="form-input" name="to" min="1930" max="2015" placeholder="to">
+		</div>
+		
+		<div class="btn-wrap">
+			<button type="button" name="findBtn" class="btn">Find</button>
+		</div>
+
+		<div class="btn-wrap">
+			<button type="reset" name="resetBtn" class="btn">Clear</button>
+		</div>
+	</form>
+
+	<table id="movieTable" class="movie-table">
+		<tbody>
+			<tr>
+				<th>Title</th>
+				<th>Genres</th>
+				<th>Year</th>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+	
+</body>
+
+</html>
